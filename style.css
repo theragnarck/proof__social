@@ -1,0 +1,256 @@
+:root{
+    /*Colores primarios*/
+    --Magenta: hsl(300, 43%, 22%);
+    --Pink: hsl(333, 80%, 67%);
+
+    /*Neutrales*/
+    --Magenta__neutral: hsl(303, 10%, 53%);
+    --Magenta__light: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+    --letra: 'League Spartan', sans-serif;
+
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+main{
+    background-color: var(--White);
+    font-family: var(--letra);
+    margin-left: 16rem;
+}
+
+.informacion{
+    display: flex;
+   
+}
+.informacion__div{
+    margin-top: 5rem;
+    text-align: left;
+    width: 32rem;
+}
+h1{
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--Magenta);
+}
+.informacion__info{
+    font-size: 1.5rem;
+    color: var(--Magenta__neutral);
+    text-align: -webkit-match-parent;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.calificaciones{
+    display: flex;
+}
+
+.calificaciones__estrellas{
+    display: flex;
+    background-color: var(--Magenta__light);
+    width: 100%;
+    margin: 0 2rem;
+    margin: 0 1rem;
+    white-space: nowrap;
+    border-radius: 1rem;
+    
+   
+    
+}
+.puntuacion__contenedor{
+    margin-right: 100px;
+    position: relative;
+    bottom: 251px;
+    margin-right: 144px;
+   
+   
+}
+.puntuacion{
+   display: flex;
+   justify-content: end;
+   margin-top: 20px;
+   color: var(--Magenta);
+   height: 700;
+   
+
+}
+   
+.puntuacion:nth-child(1) { /*posionar las targetas en forma escalera*/
+    margin-right: 60px;
+}
+
+.puntuacion:nth-child(2) {
+    margin-right: 10px;
+}
+.puntuacion:nth-child(3) {
+    margin-right: -40px;
+}
+
+
+.puntacion__tarifa{
+    background-color: var(--Magenta__light);
+    padding: 5px 40px;
+    border-radius: 10px;
+    align-items: center;
+    gap: 20px;
+    display: flex;
+    width: 30%;
+  
+   
+}
+.card{
+    display: flex;
+    padding: 20px 20px;
+    margin: 0 10px;
+    gap: 30px;
+   
+    position: relative;
+    bottom: 198px;
+    right: 34px;
+   
+  
+}
+
+
+  
+.cards:nth-child(2) {
+    margin-top: 20px;
+}
+  
+.cards:nth-child(3) {
+    margin-top: 30px;
+}
+.cards{
+  
+  width: 400px;
+  height: 200px;
+  background-color: var(--Magenta);
+  border-radius: 5px;
+
+  
+  
+
+}
+
+
+.cards__info{
+    font-size: 15px;
+    color: var(--White);
+}
+
+.cards__name{
+    color: var(--White);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+
+
+}
+
+.cards__verified{
+    color: var(--Pink);
+    display: flex;
+}
+.cards__margin{
+    margin: 20px;
+}
+.cards__colton{
+    border-radius: 50%;
+    width: 50px;
+   
+    
+}
+
+.cards__irene{
+    border-radius: 50%;
+    width: 50px;
+    
+}
+
+.cards__anne{
+    border-radius: 50%;
+    width: 50px;
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+
+@media (max-width: 767px) {
+    main {
+      margin-left: 0;
+    }
+  
+    .informacion {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .informacion__div {
+     
+      margin-top: 2rem;
+      
+    }
+  
+    .calificaciones,
+    .puntuacion,
+    .puntacion__tarifa,
+    .card,
+    .cards {
+      width: 100%;
+      margin: 10px 0;
+      
+    }
+  
+    .calificaciones__estrellas {
+      flex-direction: column;
+      justify-content: center; /* Centra las estrellas horizontalmente */
+    
+      margin: 41px;
+      top: -106px;
+  }
+    
+  
+    .card {
+      flex-direction: column;
+      justify-content: center; 
+      flex-direction: column;
+      margin: 20px 51px;
+      top: -106px;
+      left: -50px;
+  
+    }
+    .puntuacion__contenedor{
+        display: flex;
+        flex-direction: column;
+        margin: 18px 31px;
+        top: -45px;
+
+    }
+    .cards__verified{
+        
+            left: 61px;
+            position: relative;
+            bottom: 27px;
+    }
+}
+  
